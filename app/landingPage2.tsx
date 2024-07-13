@@ -1,12 +1,15 @@
-import { BackButton, TitleCard } from '@/components/TitleCard';
+import {BackButton, TitleCard } from '@/components/TitleCard';
 import {Image, Pressable, StyleSheet, Text, View} from 'react-native';
+
 
 export default function landingPage2() {
 
   return (
     <View style={styles.background}>
         {BackButton()}
-        {TitleCard()}
+        <View style={{marginTop:"-5vh"}}>
+            {TitleCard()}
+        </View>
 
       <View style={{alignItems:'center'}}>
         <Image source={require('../assets/images/Rectangle_13.png')}/>
@@ -18,6 +21,7 @@ export default function landingPage2() {
 
       <View style={{alignItems:'center',justifyContent: 'center',marginTop: '15vh'}}>
         <Pressable style={styles.button}>
+            <Link></Link>
           <Text style={styles.buttonText}>Next</Text>
         </Pressable>
       </View>
