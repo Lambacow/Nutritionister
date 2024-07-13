@@ -1,6 +1,6 @@
 import {StyleSheet, Text, View} from 'react-native';
 
-export default function Index() {
+export default function landingPage2() {
   return (
     <View style={styles.background}>
       <View style={styles.titleCard}>
