@@ -8,23 +8,25 @@ export default function landingPage2() {
         {BackButton()}
         {TitleCard()}
 
-      <View style={{alignItems:'center'}}>
-        <Image source={require('../assets/images/Rectangle_13.png')}/>
-      </View>
+        <Image 
+            style={{minWidth: "100%"}}
+            source={require('../assets/images/Rectangle_13.png')}
+        />
 
-      <View style={{alignItems:'center',marginTop:"-3vh"}}>
-        <Image source={require('../assets/images/logo.png')}/>
-      </View>
+        <View style={{alignItems: 'center'}}>
+            <Image source={require('../assets/images/logo.png')}/>
+        </View>
+      
+        <View style={{alignItems: 'center', justifyContent: 'center', marginTop: '10vh', zIndex:10}}>
+            <Pressable style={styles.button}>
+                <Text style={styles.buttonText}>Next</Text>
+            </Pressable>
+        </View>
 
-      <View style={{alignItems:'center',justifyContent: 'center',marginTop: '15vh'}}>
-        <Pressable style={styles.button}>
-          <Text style={styles.buttonText}>Next</Text>
-        </Pressable>
-      </View>
-
-      <View style={{alignItems:'center',position:"relative",marginTop:'-20vh'}}>
-        <Image source={require('../assets/images/Rectangle_14.png')}/>
-      </View>
+        <Image
+            style={{position: "absolute", minWidth: "100%", marginTop: "67vh"}}
+            source={require('../assets/images/Rectangle_14.png')}
+        />
 
     </View>    
   );
