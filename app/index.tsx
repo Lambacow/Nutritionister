@@ -10,7 +10,6 @@ export default function Index() {
         style= {{position:"absolute",zIndex:1,minWidth:"100%"}}
         source={require('../assets/images/Rectangle_6.png')}
       />
-      
 
       <View style={{alignItems:"center",marginTop:"15vh",marginBottom:"2vh"}}>
         <Image

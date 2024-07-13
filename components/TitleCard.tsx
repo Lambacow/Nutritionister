@@ -1,18 +1,31 @@
-import { View, type ViewProps } from 'react-native';
+import { Pressable, View, type ViewProps } from 'react-native';
+import { Link } from "expo-router";
 
-import {Button, StyleSheet, Text} from 'react-native';
-
+import { StyleSheet, Text} from 'react-native';
+import { AntDesign } from '@expo/vector-icons';
 
 export type ThemedViewProps = ViewProps & {
   lightColor?: string;
   darkColor?: string;
 };
 
+export function BackButton(){
+  return(
+    <Link style={{marginLeft:"10vw",marginTop:"5vh"}} replace href="\">
+      <Pressable>
+      <AntDesign name="arrowleft" size={24} color="black" />
+      </Pressable>
+    </Link>
+  )
+}
+
 export function TitleCard() {
   return (
-    <View style={styles.titleCard}>
-        <Text style={styles.text}>Welcome to</Text>
-        <Text style={styles.title}>Nutri</Text>
+    <View style={{zIndex:10}}>      
+      <View style={styles.titleCard}>
+          <Text style={styles.text}>Welcome to</Text>
+          <Text style={styles.title}>Nutri</Text>
+      </View>
     </View>
   );
 }
@@ -20,7 +33,6 @@ const styles = StyleSheet.create({
   titleCard:{
     marginLeft:"10%",
     marginTop:"10%",
-    zIndex:10
   },
   title:{
     fontSize: 36,
