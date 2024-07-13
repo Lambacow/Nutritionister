@@ -1,12 +1,12 @@
-import { TitleCard } from '@/components/TitleCard';
+import { BackButton, TitleCard } from '@/components/TitleCard';
 import {Image, Pressable, StyleSheet, Text, View} from 'react-native';
 
 export default function landingPage2() {
 
   return (
     <View style={styles.background}>
-
-      {TitleCard()}
+        {BackButton()}
+        {TitleCard()}
 
       <View style={{alignItems:'center'}}>
         <Image source={require('../assets/images/Rectangle_13.png')}/>
