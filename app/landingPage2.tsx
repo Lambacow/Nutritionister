@@ -8,34 +8,39 @@ export default function landingPage2() {
 
       {TitleCard()}
 
-      <View style = {{alignItems:'center', marginTop:"10vh"}}>
+      <View style={{alignItems: 'center'}}>
+        <Image source={require('/assets/images/Rectangle_13.png')}/>
+      </View>
+
+      <View style={{alignItems:'center', marginTop:"10vh"}}>
         <Image source={require('../assets/images/logo.png')}/>
       </View>
 
-      <View style = {{alignItems:'center', justifyContent: 'center', marginTop: '20vh'}}>
-        <Pressable style = {styles.button}>
-          <Text style = {styles.buttonText}>Next</Text>
+      <View style={{alignItems:'center', justifyContent: 'center', marginTop: '20vh'}}>
+        <Pressable style={styles.button}>
+          <Text style={styles.buttonText}>Next</Text>
         </Pressable>
       </View>
+
     </View>    
   );
 }
 
-const styles = StyleSheet.create({
+const styles=StyleSheet.create({
   background:{
     backgroundColor: "#758471",
     height:"100%"
 
   },
   buttonText:{
-    fontSize: 24,
+    fontSize:24,
     },
-  button: {
-    width: 251,
-    height: 44,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: 20,
+  button:{
+    width:251,
+    height:44,
+    alignItems:'center',
+    justifyContent:'center',
+    borderRadius:20,
     backgroundColor: '#80ED99',
   }
 });
