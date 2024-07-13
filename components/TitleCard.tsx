@@ -20,13 +20,15 @@ const styles = StyleSheet.create({
   titleCard:{
     marginLeft:"10%",
     marginTop:"10%",
-    color:"#FFFFFF"
+    zIndex:10
   },
   title:{
     fontSize: 36,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    color:"#FFFFFF",
   },
   text:{
-    fontSize: 36
+    fontSize: 36,
+    color:"#FFFFFF",
   }
 });
