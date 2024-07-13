@@ -15,7 +15,7 @@ export default function Index() {
       <View style={{alignItems:"center",marginTop:"15vh",marginBottom:"2vh"}}>
         <Image
           style= {{zIndex:-1}}
-          source={require('../assets/images/logo.png')}
+          source={require('../assets/images/logo.png')}   
         />
       </View>
 
