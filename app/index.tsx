@@ -11,7 +11,7 @@ export default function Index() {
         source={require('../assets/images/Rectangle_6.png')}
       />
 
-      <View style={{alignItems:"center",marginTop:"15vh",marginBottom:"2vh"}}>
+      <View style={{alignItems:"center",marginTop:"5vh",marginBottom:"2vh"}}>
         <Image
           style= {{zIndex:-1}}
           source={require('../assets/images/logo.png')}   

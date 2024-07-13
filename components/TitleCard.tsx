@@ -11,7 +11,7 @@ export type ThemedViewProps = ViewProps & {
 
 export function BackButton(){
   return(
-    <Link style={{marginLeft:"10vw",marginTop:"5vh"}} replace href="\">
+    <Link style={{marginLeft:"10vw",marginTop:"5vh", marginBottom:"-8vh", zIndex:11}} replace href="\">
       <Pressable>
       <AntDesign name="arrowleft" size={24} color="black" />
       </Pressable>
@@ -32,7 +32,7 @@ export function TitleCard() {
 const styles = StyleSheet.create({
   titleCard:{
     marginLeft:"10%",
-    marginTop:"10%",
+    marginTop:"35%",
   },
   title:{
     fontSize: 36,
