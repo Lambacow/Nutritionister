@@ -31,8 +31,8 @@ export function TitleCard() {
 }
 const styles = StyleSheet.create({
   titleCard:{
-    marginLeft:"10%",
-    marginTop:"35%",
+    marginLeft:"10vw",
+    marginTop:"15.5vh",
   },
   title:{
     fontSize: 36,

@@ -50,12 +50,15 @@ const styles = StyleSheet.create({
     height:"100%"
   },
   button:{
-    borderRadius:10,
-    paddingVertical:"2vh",
-    paddingHorizontal:"15vw",
-    backgroundColor:"#80ED99",
+    marginBottom:"3vh",
+        width:251,
+        height:44,
+        alignItems:'center',
+        justifyContent:'center',
+        borderRadius:20,
+        backgroundColor: '#80ED99',
   },
   buttonText:{
-    alignItems:"center",
-  }
+    fontSize:24,
+    },
 });
