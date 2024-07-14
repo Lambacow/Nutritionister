@@ -28,6 +28,12 @@ export default function landingPage3() {
                         <Text style={styles.buttonText}>Login</Text>
                     </Pressable>
                 </Link>
+
+                <Link replace href={"/login"}>
+                    <Pressable style={styles.button}>
+                        <Text style={styles.buttonText}>Sign up</Text>
+                    </Pressable>
+                </Link>
             </View>
 
 
@@ -46,11 +52,12 @@ const styles=StyleSheet.create({
       fontSize:24,
       },
     button:{
-      width:251,
-      height:44,
-      alignItems:'center',
-      justifyContent:'center',
-      borderRadius:20,
-      backgroundColor: '#80ED99',
+        marginBottom:"3vh",
+        width:251,
+        height:44,
+        alignItems:'center',
+        justifyContent:'center',
+        borderRadius:20,
+        backgroundColor: '#80ED99',
     }
   });
