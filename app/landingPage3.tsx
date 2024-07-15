@@ -23,13 +23,13 @@ export default function landingPage3() {
             </View>
 
             <View style = {{alignItems:'center', zIndex:10}}>
-                <Link replace href={"/login"}>
+                <Link replace href={"/../app/loginPages/login.tsx"}>
                     <Pressable style={styles.button}>
                         <Text style={styles.buttonText}>Login</Text>
                     </Pressable>
                 </Link>
 
-                <Link replace href={"/login"}>
+                <Link replace href={"/signUp"}>
                     <Pressable style={styles.button}>
                         <Text style={styles.buttonText}>Sign up</Text>
                     </Pressable>
